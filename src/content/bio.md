@@ -1,0 +1,105 @@
+---
+name: "Panayiotis Charalambous"
+title: "Lead Researcher in Computer Animation"
+email: "p.charalambous@cyens.org.cy"
+image: "/images/profile-panayiotis.jpg"
+experience:
+  - role: "Research Assistant Professor, Team Leader of the V-EUPNEA MRG"
+    institution: "CYENS - CENTRE OF EXCELLENCE"
+    duration: "Jun 2019 - Present"
+  - role: "Visiting Lecturer"
+    institution: "UNIVERSITY OF CYPRUS"
+    duration: "Sep 2018 - May 2019"
+  - role: "Associate Research Scientist / Computational Scientist"
+    institution: "THE CYPRUS INSTITUTE, CASTORC CENTER"
+    duration: "Sep 2016 - Aug 2018"
+  - role: "Visiting Lecturer"
+    institution: "OPEN UNIVERSITY CYPRUS"
+    duration: "Feb 2016 - Jun 2016"
+  - role: "Post-Doctoral Fellow"
+    institution: "INRIA RENNES BRETAGNE-ATLANTIQUE, MIMETIC & LAGADIC TEAMS"
+    duration: "Jun 2014 - May 2016"
+  - role: "Research Associate"
+    institution: "UNIVERSITY OF CYPRUS, GRAPHICS AND VISUALIZATION LAB"
+    duration: "Feb 2007 - May 2014"
+  - role: "Research Associate"
+    institution: "UNIVERSITY OF CYPRUS, XI-GROUP COMPUTER ARCHITECTURE LAB"
+    duration: "Jul 2005 - Jan 2007"
+education:
+  - degree: "Ph.D in Computer Science"
+    institution: "UNIVERSITY OF CYPRUS"
+    duration: "April 2014"
+  - degree: "M.Sc in Informatics and Telecommunications"
+    institution: "NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS"
+    duration: "2002 - 2005"
+  - degree: "B.Sc in Informatics and Telecommunications"
+    institution: "NATIONAL AND KAPODISTRIAN UNIVERSITY OF ATHENS"
+    duration: "1998 - 2002"
+skills:
+  - "C"
+  - "C++"
+  - "C#"
+  - "Python"
+  - "Java"
+  - "Pascal"
+  - "JavaScript"
+  - "Unity3D"
+  - "Unreal Engine"
+  - "Visual Studio"
+  - "Deep Learning (Tensorflow, Keras, Theano)"
+  - "scikit-learn"
+  - "OpenGL"
+  - "SQL"
+  - "MongoDB"
+teaching:
+  - institution: "CYENS - Centre of Excellence"
+    role: "Main Tutor, Summer School on Computer Games and AI"
+    duration: "Jun 2019 - Present"
+    courses:
+      - "Main tutor of the Summer School targeting high school students."
+  - institution: "University of Cyprus"
+    role: "Visiting Lecturer"
+    duration: "Sep 2018 - Present"
+    courses:
+      - "CS653: Computer Games Technologies"
+      - "CS426: Computer Graphics"
+      - "CS133: Object Oriented Programming"
+      - "CS131: Programming Principles I"
+      - "CS231: Data Strutures and Algorithms"
+  - institution: "The Cyprus Institute"
+    role: "PhD Courses (Lecturer)"
+    duration: "Sep 2017 - Dec 2017"
+    courses:
+      - "CoS516: Computer Graphics and Data Exploration"
+  - institution: "Open University Cyprus"
+    role: "Master Courses (Lecturer)"
+    duration: "Feb 2016 - Jun 2016"
+    courses:
+      - "PES602: Agents and Multi-Agent Systems"
+  - institution: "University of Cyprus, Department of Computer Science"
+    role: "Teaching Assistant"
+    duration: "Feb 2007 - May 2014"
+    courses:
+      - "CS656: Computer Graphics, Modelling and Realism"
+      - "CS607: Graphical and Image Processing"
+      - "CS653: Computer Games Software Technology"
+      - "CS426: Computer Graphics"
+      - "CS231: Data Structures and Algorithms"
+      - "CS497: Numerical Analysis"
+      - "CS034: Introduction to Programming for Engineers"
+      - "CS032: Introduction to Programming and Problem Solving"
+  - institution: "University of Cyprus, Department of Computer Science"
+    role: "Other Lectures"
+    duration: "2016 - 2018"
+    courses:
+      - "CS653: Computer Games Software Technology. Guest Lectures on Artificial Intelligence for Computer Games."
+      - "Summer School 2016, 2018. Lectures on Computer Graphics, Game Design, Animation and Development of a game in the Unity Game Engine."
+---
+
+This is a short bio about you. You can write a few paragraphs here about your research interests, your current role, and your background. You can use Markdown to format the text, for example, to create lists:
+
+*   **Research Interest 1:** Real-time rendering
+*   **Research Interest 2:** Physically-based simulation
+*   **Research Interest 3:** Geometric modeling
+
+You can also include links, for example, to your [Twitter](https://twitter.com) or [LinkedIn](https://linkedin.com) profiles.

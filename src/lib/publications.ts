@@ -1,0 +1,115 @@
+import fs from 'fs';
+import path from 'path';
+import Cite from 'citation-js';
+import yaml from 'js-yaml';
+
+const contentDirectory = path.join(process.cwd(), 'src/content');
+
+// A mapping from BibTeX entry types to user-friendly names.
+const publicationTypeMap: Record<string, string> = {
+  'article-journal': 'Journal Article',
+  'paper-conference': 'Conference Paper',
+  'chapter': 'Book Chapter',
+  'book': 'Book',
+  'report': 'Technical Report',
+  'thesis': 'Thesis',
+  'document': 'Document',
+};
+
+export interface Publication {
+  id: string;
+  type: string;
+  formatted: string; // To hold the formatted citation
+  title: string;
+  author: string;
+  year: string;
+  journal?: string;
+  booktitle?: string;
+  volume?: string;
+  number?: string;
+  pages?: string;
+  publisher?: string;
+  doi?: string;
+  url?: string;
+  project_page?: string;
+  tagline?: string;
+  video?: string;
+  youtube?: string;
+  thumbnail?: string;
+  images?: string[];
+  appendix?: string;
+  code?: string;
+  presentation?: string;
+  pdf?: string;
+}
+
+export function getPublications(): Publication[] {
+  const bibtexPath = path.join(contentDirectory, 'publications.bib');
+  const bibtexContent = fs.readFileSync(bibtexPath, 'utf8');
+  const mediaPath = path.join(contentDirectory, 'media.yaml');
+  const mediaContent = fs.readFileSync(mediaPath, 'utf8');
+
+  const publications = new Cite(bibtexContent);
+  const mediaData = yaml.load(mediaContent) as Record<string, any>;
+
+  const allPublications = publications.data.map((p: any) => {
+    const id = p.id;
+    const media = mediaData[id] || {};
+    const year = p.issued?.['date-parts']?.[0]?.[0]?.toString() || '';
+    
+    // Create a new Cite object for each entry to format it individually
+    let formattedCitation = new Cite(p).format('bibliography', {
+      format: 'html',
+      template: 'apa',
+      lang: 'en-US'
+    });
+
+    // Highlight the user's name
+    const nameToHighlight = /(Charalambous, P\.|Charalambous, Panayiotis)/gi;
+    formattedCitation = formattedCitation.replace(nameToHighlight, (match) => `<strong>${match}</strong>`);
+
+    return {
+      id,
+      type: publicationTypeMap[p.type.toLowerCase()] || 'Miscellaneous',
+      formatted: formattedCitation,
+      title: p.title || 'No Title',
+      author: p.author ? p.author.map((a: any) => `${a.given} ${a.family}`).join(', ') : 'No Author',
+      year: year,
+      journal: p.container_title,
+      booktitle: p.event,
+      volume: p.volume,
+      number: p.issue,
+      pages: p.page,
+      publisher: p.publisher,
+      doi: p.DOI,
+      url: p.URL,
+      ...media,
+    };
+  }).sort((a, b) => {
+    const typeOrder = [
+      'Journal Article',
+      'Conference Paper',
+      'Book',
+      'Book Chapter',
+      'Technical Report',
+      'PhD Thesis',
+      'Masters Thesis',
+      'Miscellaneous',
+    ];
+
+    const typeAIndex = typeOrder.indexOf(a.type);
+    const typeBIndex = typeOrder.indexOf(b.type);
+
+    // If types are the same, sort by year descending
+    if (typeAIndex === typeBIndex) {
+      if (a.year > b.year) return -1;
+      if (a.year < b.year) return 1;
+      return 0;
+    }
+
+    // Otherwise, sort by type order
+    return typeAIndex - typeBIndex;
+  });
+
+  return allPublications;
+}

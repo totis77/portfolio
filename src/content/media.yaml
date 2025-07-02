@@ -1,0 +1,665 @@
+# src/content/media.yaml - A manifest to link publications to rich media.
+
+author2023particle:
+  project_page: /projects/particle-simulation
+  publisher_link: https://dl.acm.org/doi/abs/10.1145/your.doi.number
+  pdf: /papers/author2023particle.pdf
+  tagline: "A novel method for real-time particle advection using adaptive grids."
+  thumbnail: /images/particle-sim/teaser-image.jpg
+  youtube: https://www.youtube.com/watch?v=your_video_id
+  images:
+    - /images/particle-sim/result1.png
+    - /images/particle-sim/result2.png
+    - /images/particle-sim/comparison.gif
+  code: https://github.com/your-username/particle-simulation
+  appendix: /papers/author2023particle_appendix.pdf
+
+charalambous2010learning:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+grivas2012design:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambouslearning:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2012reconstruction:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+iliadoureviving:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2014pag:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2014data:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+ramirez2014optimization:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2010simulating:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+aristidou2015emotion:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+aristidou2015folk:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+jordao2015crowd:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+ren2017group:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2016learning:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2016data:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambousclassifying:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+kyrlitsias2018virtual:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2018enabling:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+artopoulos2019immersive:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+artopoulos2018analysis:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+allbeckvhcie:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2019did:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+artopoulos2019virtual:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+altmeyeraivr:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+ammiinternational:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+guardia2021digital:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+makri2021towards:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+zacharatos2021emotion:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+giunchi2021perceived:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+caceresbulitko:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+abaivr:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+lemonari2022authoring:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2018proceedings:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+panayiotou2022ccp:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+munoz2022digital:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+makri2022navigating:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+numan2023towards:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+apostolou2023funneling:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+makri2023curriculum:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+evripidou2023collaborative:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+charalambous2023greil:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+lemonari2024p2c:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+lemonari2024lexicrowd:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+kyriakou2024virtual:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+lemonari2024behavioral:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+culie2024crits:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+munoz2024digital:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+azizi2024improving:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+panayiotou2025cedrl:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+panayiotou2025gen:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+kyriakou2025multi:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+azizi2025deepsafe:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+azizi2025demonstrating:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - 
+  code: 
+  appendix: 
+
+lemonari2025mpact:
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
+  images:
+    - /images/particle-sim/result1.png
+    - /images/particle-sim/result2.png
+    - /images/particle-sim/comparison.gif    - 
+  code: 
+  appendix: 

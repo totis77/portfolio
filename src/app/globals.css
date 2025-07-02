@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-space-grotesk: 'Space Grotesk', sans-serif;
+  }
+  .dark {
+    --tw-bg-opacity: 1;
+    background-color: #111827;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-black antialiased dark:bg-gray-900 dark:text-white;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+  header, footer, .print\:hidden {
+    display: none;
+  }
+}

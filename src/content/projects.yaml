@@ -1,0 +1,109 @@
+- id: "sharespace"
+  title: "ShareSpace"
+  role: "Principal Investigator"
+  duration: "Jan 2023 - Dec 2025"
+  funding: "375K / 3M"
+  description: "Principal Investigator (alongside Yiorgos Chrysanthou). The project has received funding from H2020."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images:
+    - "/images/fluid_sim_1.png"
+    - "/images/fluid_sim_2.png"
+
+- id: "metacities"
+  title: "METACITIES"
+  role: "Participant"
+  duration: "Jan 2023 - Dec 2025"
+  funding: "511K / 3M"
+  description: "The project has received funding from H2020."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "premiere"
+  title: "PREMIERE"
+  role: "Participant"
+  duration: "Oct 2022 - Sep 2025"
+  funding: "600K / 3M"
+  description: "The project has received funding from H2020."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "3dnicosiaplusplus"
+  title: "3DNicosia++"
+  role: "Participant"
+  duration: "Apr 2022 - Mar 2023"
+  funding: "47K"
+  description: "Internally funded project related to the iNicosia flagship project."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "inicosia"
+  title: "iNicosia"
+  role: "Research Department Lead"
+  duration: "Oct 2021 - Present"
+  funding: ""
+  description: "Currently the lead from the Research Department for the flagship project of CYENS."
+  technologies: []
+  project_page: "http://inicosia.cyens.org.cy"
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "reinherit"
+  title: "ReInHerit"
+  role: "Principal Investigator"
+  duration: "Feb 2021 - Jan 2024"
+  funding: "320K / 3M"
+  description: "Principal Investigator for CYENS. This project has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 101004545."
+  technologies: []
+  project_page: "http://reinherit.eu"
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "sony-pictures-animation"
+  title: "Sony Pictures Animation"
+  role: "Principal Investigator"
+  duration: "Oct 2020 - Present"
+  funding: ""
+  description: "Principal Investigator of the ongoing collaboration of CYENS with Sony Pictures Animation."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "ehem"
+  title: "EHEM"
+  role: "Principal Investigator"
+  duration: "Sep 2020 - Aug 2023"
+  funding: "175K / 405K"
+  description: "Principal Investigator for CYENS. The project was approved in the JPI Cultural Heritage Conservation, Protection and Use (0127) call in 2020. The JPICH has received funding from the European Union's Horizon 2020 research and innovation programme under grant agreement No 699523."
+  technologies: []
+  project_page: "https://ehemproject.eu"
+  video: ""
+  thumbnail: ""
+  images: []
+
+- id: "astrotourism"
+  title: "Astrotourism"
+  role: "Participant"
+  duration: "Nov 2019 - Oct 2022"
+  funding: "153K / 1.21M"
+  description: "The Project INTEGRATED/0918/0038 is co-financed by the European Regional Development Fund and the Republic of Cyprus through the Research and Innovation Foundation and it is supported by the Deputy Ministry of Tourism and the Deputy Ministry of Research, Innovation and Digital Policy."
+  technologies: []
+  project_page: ""
+  video: ""
+  thumbnail: ""
+  images: []
