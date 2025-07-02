@@ -32,6 +32,7 @@ export interface Publication {
   doi?: string;
   url?: string;
   project_page?: string;
+  publisher_link?: string; // Added missing property
   tagline?: string;
   video?: string;
   youtube?: string;
