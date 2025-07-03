@@ -50,35 +50,42 @@ export function getPublications(): Publication[] {
   const bibtexContent = fs.readFileSync(bibtexPath, 'utf8');
   const mediaPath = path.join(contentDirectory, 'media.yaml');
   const mediaContent = fs.readFileSync(mediaPath, 'utf8');
-
-  const publications = new Cite(bibtexContent);
   const mediaData = yaml.load(mediaContent) as Record<string, any>;
 
-  const allPublications = publications.data.map((p: any) => {
-    const id = p.id;
+  // Split the .bib file into individual entries
+  const bibEntries = bibtexContent.split(/^@/m).slice(1).map(entry => '@' + entry);
+
+  const allPublications = bibEntries.map((entryStr: string) => {
+    let p: any;
+    let id: string = 'unknown';
+    try {
+      // Parse each entry individually
+      const parsed = new Cite(entryStr);
+      p = parsed.data[0];
+      id = p.id;
+    } catch (e) {
+      console.error(`Failed to parse BibTeX entry. Entry content: ${entryStr.substring(0, 100)}...`);
+      return null;
+    }
+
     const media = mediaData[id] || {};
     const year = p.issued?.['date-parts']?.[0]?.[0]?.toString() || '';
     
     let formattedCitation = `<p>Error formatting citation for ${id}</p>`;
     try {
-      // Attempt to format the citation
-      const citation = new Cite(p).format('bibliography', {
+      formattedCitation = new Cite(p).format('bibliography', {
         format: 'html',
         template: 'apa',
         lang: 'en-US'
       });
-      // If successful, update the variable
-      formattedCitation = citation;
     } catch (e) {
-      // If formatting fails, log the error but continue
       if (e instanceof Error) {
-        console.error(`Failed to format citation for entry: ${p.id}. Error: ${e.message}`);
+        console.error(`Failed to format citation for entry: ${id}. Error: ${e.message}`);
       } else {
-        console.error(`Failed to format citation for entry: ${p.id}. Unknown error: ${e}`);
+        console.error(`Failed to format citation for entry: ${id}. Unknown error: ${e}`);
       }
     }
 
-    // Highlight the user's name
     const nameToHighlight = /(Charalambous, P\.|Charalambous, Panayiotis)/gi;
     formattedCitation = formattedCitation.replace(nameToHighlight, (match: string) => `<strong>${match}</strong>`);
 
@@ -99,7 +106,8 @@ export function getPublications(): Publication[] {
       url: p.URL,
       ...media,
     };
-  }).sort((a: Publication, b: Publication) => {
+  }).filter((p): p is Publication => p !== null)
+  .sort((a: Publication, b: Publication) => {
     const typeOrder = [
       'Journal Article',
       'Conference Paper',
@@ -114,14 +122,12 @@ export function getPublications(): Publication[] {
     const typeAIndex = typeOrder.indexOf(a.type);
     const typeBIndex = typeOrder.indexOf(b.type);
 
-    // If types are the same, sort by year descending
     if (typeAIndex === typeBIndex) {
       if (a.year > b.year) return -1;
       if (a.year < b.year) return 1;
       return 0;
     }
-
-    // Otherwise, sort by type order
+    
     return typeAIndex - typeBIndex;
   });
 
