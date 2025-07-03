@@ -58,12 +58,24 @@ export function getPublications(): Publication[] {
     const media = mediaData[id] || {};
     const year = p.issued?.['date-parts']?.[0]?.[0]?.toString() || '';
     
-    // Create a new Cite object for each entry to format it individually
-    let formattedCitation = new Cite(p).format('bibliography', {
-      format: 'html',
-      template: 'apa',
-      lang: 'en-US'
-    });
+    let formattedCitation = `<p>Error formatting citation for ${id}</p>`;
+    try {
+      // Attempt to format the citation
+      const citation = new Cite(p).format('bibliography', {
+        format: 'html',
+        template: 'apa',
+        lang: 'en-US'
+      });
+      // If successful, update the variable
+      formattedCitation = citation;
+    } catch (e) {
+      // If formatting fails, log the error but continue
+      if (e instanceof Error) {
+        console.error(`Failed to format citation for entry: ${p.id}. Error: ${e.message}`);
+      } else {
+        console.error(`Failed to format citation for entry: ${p.id}. Unknown error: ${e}`);
+      }
+    }
 
     // Highlight the user's name
     const nameToHighlight = /(Charalambous, P\.|Charalambous, Panayiotis)/gi;

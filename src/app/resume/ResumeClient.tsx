@@ -1,7 +1,6 @@
 'use client';
 
 import { Bio } from '@/lib/bio';
-import { Publication } from '@/lib/publications';
 
 export default function ResumeClient({ bio }: { bio: Bio }) {
   const handlePrint = () => {
