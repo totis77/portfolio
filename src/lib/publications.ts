@@ -37,6 +37,7 @@ export interface Publication {
   video?: string;
   youtube?: string;
   thumbnail?: string;
+  animation?: string;
   images?: string[];
   appendix?: string;
   code?: string;

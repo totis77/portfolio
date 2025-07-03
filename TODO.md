@@ -36,8 +36,27 @@ This document tracks the development process of the portfolio website.
 
 ---
 
-## Future Ideas & Enhancements
+## Future Roadmap
 
-- [ ] Devise a plan to generate the CV from a LaTeX source file for perfect formatting.
-- [ ] Add a "Presentations" or "Talks" section to the website.
-- [ ] Further enhance the design with more animations or interactive elements.
+### Tier 1: High-Impact Visuals
+- [ ] **Interactive Thumbnails:**
+  - [ ] Install `three.js` and related types.
+  - [ ] Create a reusable `InteractiveThumbnail.tsx` component.
+  - [ ] Develop a default, abstract animation (e.g., particle system).
+  - [ ] Integrate the component into the Publications page.
+  - [ ] Add a new `animation` field to `media.yaml` to allow for per-publication customization.
+- [ ] **"Research Visuals" Gallery:**
+  - [ ] Create a new `gallery.yaml` content file.
+  - [ ] Build a new `/gallery` page with a masonry grid layout.
+  - [ ] Implement a "lightbox" view for full-size images and videos.
+
+### Tier 2: Ambitious Enhancements
+- [ ] **Generative Art Header:**
+  - [ ] Develop a subtle, performant background animation.
+  - [ ] Integrate it into the main site layout.
+- [ ] **LaTeX-based CV Generation:**
+  - [ ] Devise a plan to generate the CV from a LaTeX source file for perfect formatting.
+
+### Tier 3: Additional Content
+- [ ] **"Presentations" or "Talks" Section:**
+    - [ ] This was completed, but we reverted it. We can re-add it here if desired.
