@@ -3,19 +3,10 @@
 import { Bio } from '@/lib/bio';
 import { Publication } from '@/lib/publications';
 
-export default function ResumeClient({ bio, publications }: { bio: Bio; publications: Publication[] }) {
+export default function ResumeClient({ bio }: { bio: Bio }) {
   const handlePrint = () => {
     window.print();
   };
-
-  const groupedPublications = publications.reduce((acc, pub) => {
-    const type = pub.type;
-    if (!acc[type]) {
-      acc[type] = [];
-    }
-    acc[type].push(pub);
-    return acc;
-  }, {} as Record<string, Publication[]>);
 
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">
