@@ -28,7 +28,10 @@ const PublicationCard = ({ pub }: { pub: Publication }) => (
         dangerouslySetInnerHTML={{ __html: pub.formatted }} 
       />
 
-      {pub.tagline && <p className="mt-2 text-gray-700 dark:text-gray-300 italic">"{pub.tagline}"</p>}
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+        {pub.journal || pub.booktitle}, {pub.year}
+      </p>
+      {pub.tagline && <p className="mt-2 text-gray-700 dark:text-gray-300 italic">&quot;{pub.tagline}&quot;</p>}
       
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
         {pub.project_page && (

@@ -17,12 +17,12 @@ export interface Bio {
   teaching: { institution: string; role: string; duration: string; courses: string[] }[];
 }
 
-export function getBio(): Bio {
+export async function getBio(): Promise<Bio> {
   const bioPath = path.join(contentDirectory, 'bio.md');
   const fileContents = fs.readFileSync(bioPath, 'utf8');
   const matterResult = matter(fileContents);
 
-  const contentHtml = marked(matterResult.content);
+  const contentHtml = await marked(matterResult.content);
 
   return {
     name: matterResult.data.name,

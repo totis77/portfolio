@@ -67,7 +67,7 @@ export function getPublications(): Publication[] {
 
     // Highlight the user's name
     const nameToHighlight = /(Charalambous, P\.|Charalambous, Panayiotis)/gi;
-    formattedCitation = formattedCitation.replace(nameToHighlight, (match) => `<strong>${match}</strong>`);
+    formattedCitation = formattedCitation.replace(nameToHighlight, (match: string) => `<strong>${match}</strong>`);
 
     return {
       id,
@@ -86,7 +86,7 @@ export function getPublications(): Publication[] {
       url: p.URL,
       ...media,
     };
-  }).sort((a, b) => {
+  }).sort((a: Publication, b: Publication) => {
     const typeOrder = [
       'Journal Article',
       'Conference Paper',

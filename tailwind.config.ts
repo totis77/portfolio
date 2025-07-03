@@ -16,7 +16,7 @@ const config: Config = {
         primary: '#1f2937',
         'primary-dark': '#111827',
       },
-      typography: (theme) => ({
+      typography: (theme: any) => ({
         DEFAULT: {
           css: {
             a: {

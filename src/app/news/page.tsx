@@ -1,7 +1,7 @@
 import { getNewsContent } from '@/lib/news';
 
-export default function NewsPage() {
-  const { title, contentHtml } = getNewsContent();
+export default async function NewsPage() {
+  const { title, contentHtml } = await getNewsContent();
 
   return (
     <div className="divide-y divide-gray-200 dark:divide-gray-700">

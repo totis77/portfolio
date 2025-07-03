@@ -10,7 +10,7 @@ export interface NewsContent {
   contentHtml: string;
 }
 
-export function getNewsContent(): NewsContent {
+export async function getNewsContent(): Promise<NewsContent> {
   const newsPath = path.join(contentDirectory, 'news.md');
   const fileContents = fs.readFileSync(newsPath, 'utf8');
 
@@ -18,7 +18,7 @@ export function getNewsContent(): NewsContent {
   const matterResult = matter(fileContents);
 
   // Use marked to convert markdown into HTML string
-  const contentHtml = marked(matterResult.content);
+  const contentHtml = await marked(matterResult.content);
 
   // Combine the data with the id
   return {

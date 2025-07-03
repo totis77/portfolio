@@ -120,21 +120,6 @@ export default function ResumeClient({ bio, publications }: { bio: Bio; publicat
             ))}
           </div>
         </div>
-
-        {/* Publications Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-          <h2 className="text-2xl font-bold mb-4">Publications</h2>
-          {Object.keys(groupedPublications).map((type) => (
-            <div key={type} className="mb-6">
-              <h3 className="text-xl font-semibold mb-2">{type}</h3>
-              <ul className="list-disc list-inside space-y-2">
-                {groupedPublications[type].map((pub) => (
-                  <li key={pub.id} className="prose prose-sm dark:prose-dark max-w-none" dangerouslySetInnerHTML={{ __html: pub.formatted }} />
-                ))}
-              </ul>
-            </div>
-          ))}
-        </div>
       </div>
     </div>
   );
