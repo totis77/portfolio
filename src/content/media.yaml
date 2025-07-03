@@ -1,12 +1,25 @@
 # src/content/media.yaml - A manifest to link publications to rich media.
 
+author2023particle:
+  project_page: /projects/particle-simulation
+  publisher_link: https://dl.acm.org/doi/abs/10.1145/your.doi.number
+  pdf: /papers/author2023particle.pdf
+  tagline: "A novel method for real-time particle advection using adaptive grids."
+  thumbnail: /images/particle-sim/teaser-image.jpg
+  youtube: https://www.youtube.com/watch?v=your_video_id
+  images:
+    - /images/particle-sim/result1.png
+    - /images/particle-sim/result2.png
+    - /images/particle-sim/comparison.gif
+  code: https://github.com/your-username/particle-simulation
+  appendix: /papers/author2023particle_appendix.pdf
+
 charalambous2010learning:
   project_page: 
   publisher_link: 
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -19,7 +32,6 @@ grivas2012design:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -32,7 +44,6 @@ charalambouslearning:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -45,7 +56,6 @@ charalambous2012reconstruction:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -58,7 +68,6 @@ iliadoureviving:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -71,7 +80,6 @@ charalambous2014pag:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -84,7 +92,6 @@ charalambous2014data:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -97,7 +104,6 @@ ramirez2014optimization:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -110,7 +116,6 @@ charalambous2010simulating:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -123,7 +128,6 @@ aristidou2015emotion:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -136,7 +140,6 @@ aristidou2015folk:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -149,7 +152,6 @@ jordao2015crowd:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -162,7 +164,6 @@ ren2017group:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -175,7 +176,6 @@ charalambous2016learning:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -188,7 +188,6 @@ charalambous2016data:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -201,7 +200,6 @@ charalambousclassifying:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -214,7 +212,6 @@ kyrlitsias2018virtual:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -227,7 +224,6 @@ charalambous2018enabling:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -240,7 +236,6 @@ artopoulos2019immersive:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -253,7 +248,6 @@ artopoulos2018analysis:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -266,7 +260,6 @@ allbeckvhcie:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -279,7 +272,6 @@ charalambous2019did:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -292,7 +284,6 @@ artopoulos2019virtual:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -305,7 +296,6 @@ altmeyeraivr:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -318,7 +308,6 @@ ammiinternational:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -331,7 +320,6 @@ guardia2021digital:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -344,7 +332,6 @@ makri2021towards:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -357,7 +344,6 @@ zacharatos2021emotion:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -370,7 +356,6 @@ giunchi2021perceived:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -383,7 +368,6 @@ caceresbulitko:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -396,7 +380,6 @@ abaivr:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -409,7 +392,6 @@ lemonari2022authoring:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -422,7 +404,6 @@ charalambous2018proceedings:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -430,16 +411,15 @@ charalambous2018proceedings:
   appendix: 
 
 panayiotou2022ccp:
-  project_page: https://veupnea.github.io/publication_pages/siggraph22-ccp.html
-  publisher_link: https://doi.org/10.1145/3528233.3530712
-  pdf: /publications/panayiotou2022ccp.pdf
-  tagline:  Simulating heterogeneous virtual crowds is essential for creating believable environments, particularly in scenarios like museum exhibitions where agents must exhibit a range of behaviors. This work presents a reinforcement learning framework capable of concurrently learning multiple agent behaviors—such as goal seeking, collision avoidance, environmental interaction, and grouping—within a single model. By dynamically adjusting the relative importance of each behavior during training, the system enables the creation of configurable agent profiles and generalizes to unseen scenarios with higher crowd densities, novel behavior combinations, and more complex layouts. 
-  thumbnail: /images/panayiotou2022ccp-1.jpg
-  animation: 
-  youtube: https://www.youtube.com/watch?v=k5SAOnisBas
+  project_page: 
+  publisher_link: 
+  pdf: 
+  tagline: 
+  thumbnail: 
+  youtube: 
   images:
     - 
-  code: https://github.com/veupnea/CCP
+  code: 
   appendix: 
 
 munoz2022digital:
@@ -448,7 +428,6 @@ munoz2022digital:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -461,7 +440,6 @@ makri2022navigating:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -474,7 +452,6 @@ numan2023towards:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -487,7 +464,6 @@ apostolou2023funneling:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -500,7 +476,6 @@ makri2023curriculum:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -513,7 +488,6 @@ evripidou2023collaborative:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -526,7 +500,6 @@ charalambous2023greil:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: "boids"  
   youtube: 
   images:
     - 
@@ -539,7 +512,6 @@ lemonari2024p2c:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: "boids"  
   youtube: 
   images:
     - 
@@ -552,7 +524,6 @@ lemonari2024lexicrowd:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: "boids"  
   youtube: 
   images:
     - 
@@ -565,7 +536,6 @@ kyriakou2024virtual:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -578,7 +548,6 @@ lemonari2024behavioral:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: "boids"  
   youtube: 
   images:
     - 
@@ -591,7 +560,6 @@ culie2024crits:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -604,7 +572,6 @@ munoz2024digital:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -617,7 +584,6 @@ azizi2024improving:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -630,7 +596,6 @@ panayiotou2025cedrl:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: "boids"  
   youtube: 
   images:
     - 
@@ -643,7 +608,6 @@ panayiotou2025gen:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: 
   youtube: 
   images:
     - 
@@ -656,7 +620,6 @@ kyriakou2025multi:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -669,7 +632,6 @@ azizi2025deepsafe:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -682,7 +644,6 @@ azizi2025demonstrating:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - 
@@ -695,11 +656,10 @@ lemonari2025mpact:
   pdf: 
   tagline: 
   thumbnail: 
-  animation: ""
   youtube: 
   images:
     - /images/particle-sim/result1.png
     - /images/particle-sim/result2.png
     - /images/particle-sim/comparison.gif    - 
   code: 
-  appendix:
+  appendix: 

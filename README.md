@@ -7,9 +7,9 @@ The core philosophy is **content-first**. All content is managed through simple,
 ## Core Features
 
 *   **Content-Driven:** All site content is managed through simple text files in the `src/content` directory.
-*   **Rich Publication Management:** Publications are managed via a single, standard `.bib` file. A powerful YAML manifest (`media.yaml`) links these entries to rich media like thumbnails, videos, project pages, and PDFs.
-*   **Interactive & Searchable Publications:** The publications page is fully interactive, with features for full-text search and collapsible year-based grouping.
-*   **Dynamic & Printable Resume:** A dedicated, printer-friendly resume page is available at `/resume`. It dynamically generates its content from a single `bio.md` file, ensuring it's always up-to-date. It includes a "Download PDF" option.
+*   **Rich Publication Management:** Publications are managed via a single, standard `.bib` file. A powerful YAML manifest (`media.yaml`) links these entries to rich media like thumbnails, videos, project pages, PDFs, and more.
+*   **Interactive & Searchable Publications:** The publications page is fully interactive, with features for full-text search and collapsible year-based grouping to handle a large number of publications gracefully.
+*   **Dynamic & Printable CV:** A dedicated, printer-friendly CV page is available at `/cv`. It dynamically generates its content from the same sources as the rest of the site (e.g., `bio.md`), ensuring it's always up-to-date. It includes a "Download PDF" option.
 *   **Detailed Project Pages:** Each project has its own dedicated page, showcasing details, image galleries, and videos.
 *   **Modern Design:** The site features a clean, minimalist design with light and dark modes.
 *   **API Endpoint:** A JSON API endpoint is available at `/api/publications` to expose publication data for other applications.
@@ -36,15 +36,8 @@ The core philosophy is **content-first**. All content is managed through simple,
     ```bash
     npm install
     ```
-2.  Run the development server:
+2.  Start the development server:
     ```bash
     npm run dev
     ```
-3.  Run the pre-flight checks before committing:
-    ```bash
-    npm run check
-    ```
-
-## Deployment
-
-This project is optimized for deployment on [Vercel](https://vercel.com). Simply connect your GitHub repository to Vercel for automatic deployments.
+3.  Open [http://localhost:3000](http://localhost:3000) in your browser.
