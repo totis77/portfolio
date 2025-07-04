@@ -96,10 +96,28 @@ teaching:
       - "Summer School 2016, 2018. Lectures on Computer Graphics, Game Design, Animation and Development of a game in the Unity Game Engine."
 ---
 
-This is a short bio about you. You can write a few paragraphs here about your research interests, your current role, and your background. You can use Markdown to format the text, for example, to create lists:
+## About Me
 
-*   **Research Interest 1:** Real-time rendering
-*   **Research Interest 2:** Physically-based simulation
-*   **Research Interest 3:** Geometric modeling
+Dr. Panayiotis Charalambous is a Lead Researcher in Computer Animation at CYENS - Centre of Excellence, where he leads the V-EUPNEA MRG (Mixed Reality Group). With over 15 years of experience in computer graphics and virtual environments, his research spans multiple interdisciplinary areas at the intersection of computer science, cultural heritage, and human-computer interaction.
 
-You can also include links, for example, to your [Twitter](https://twitter.com) or [LinkedIn](https://linkedin.com) profiles.
+## Research Interests
+
+My research focuses on several interconnected themes that advance the state-of-the-art in computer animation and virtual environments:
+
+*   **Crowd Simulation & Behavioral Modeling:** Developing advanced algorithms for realistic crowd behavior using deep reinforcement learning, data-driven approaches, and example-based methods. This includes the GREIL framework for crowd simulation with deep reinforcement learning and the CEDRL system for diverse crowd generation.
+
+*   **Cultural Heritage & Digital Preservation:** Creating immersive virtual reconstructions and digital twins of historical sites, particularly focusing on medieval monuments and urban environments. This work includes the reconstruction of 19th century Nicosia and digital documentation of architectural heritage.
+
+*   **Virtual Reality & Mixed Reality:** Exploring the boundaries of VR/AR technologies for collaborative environments, outdoor mixed reality systems, and haptic feedback mechanisms like the Funneling Effect for illusory touch in virtual reality.
+
+*   **Reinforcement Learning & AI:** Applying machine learning techniques to traffic simulation, autonomous navigation, and intelligent agent behavior in virtual environments, including curriculum-based learning approaches.
+
+*   **Computer Animation & Motion Analysis:** Investigating emotion recognition from motion capture data, performance analysis using Laban Movement Analysis, and creating interactive virtual characters with realistic behaviors.
+
+*   **Digital Humanities & Interactive Media:** Bridging technology and humanities through projects that combine computer graphics with art history, music performance, and cultural heritage preservation.
+
+## Current Focus
+
+Currently, I am leading several EU-funded projects including ShareSpace, METACITIES, and PREMIERE, which explore collaborative virtual environments, smart city technologies, and immersive media experiences. My work emphasizes both theoretical contributions to computer graphics and practical applications in cultural heritage preservation and urban planning.
+
+You can find more details about my research projects and publications throughout this website, or connect with me via [LinkedIn](https://linkedin.com) for professional networking.

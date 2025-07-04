@@ -10,7 +10,9 @@ export interface Bio {
   title: string;
   email: string;
   image: string;
-  contentHtml: string;
+  aboutHtml: string;
+  researchInterestsHtml: string;
+  currentFocusHtml: string;
   experience: { role: string; institution: string; duration: string }[];
   education: { degree: string; institution: string; duration: string }[];
   skills: string[];
@@ -22,7 +24,11 @@ export async function getBio(): Promise<Bio> {
   const fileContents = fs.readFileSync(bioPath, 'utf8');
   const matterResult = matter(fileContents);
 
-  const contentHtml = await marked(matterResult.content);
+  // Split content by headings
+  const sections = matterResult.content.split('## ').filter(Boolean);
+  const aboutSection = sections.find(s => s.startsWith('About Me'))?.replace('About Me\n\n', '');
+  const researchSection = sections.find(s => s.startsWith('Research Interests'))?.replace('Research Interests\n\n', '');
+  const focusSection = sections.find(s => s.startsWith('Current Focus'))?.replace('Current Focus\n\n', '');
 
   return {
     name: matterResult.data.name,
@@ -33,6 +39,8 @@ export async function getBio(): Promise<Bio> {
     education: matterResult.data.education || [],
     skills: matterResult.data.skills || [],
     teaching: matterResult.data.teaching || [],
-    contentHtml,
+    aboutHtml: aboutSection ? await marked(aboutSection) : '',
+    researchInterestsHtml: researchSection ? await marked(researchSection) : '',
+    currentFocusHtml: focusSection ? await marked(focusSection) : '',
   };
 }

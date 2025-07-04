@@ -31,86 +31,96 @@ export default function ResumeClient({ bio }: { bio: Bio }) {
           </div>
         </div>
       </div>
-      <div className="py-8 space-y-8">
-        {/* Bio Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-            <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
-                <div className="flex flex-col items-center space-x-2 pt-8">
-                    <img src={bio.image} alt={bio.name} className="h-48 w-48 rounded-full" />
-                    <h3 className="pb-2 pt-4 text-2xl font-bold leading-8 tracking-tight">{bio.name}</h3>
-                    <div className="text-gray-500 dark:text-gray-400">{bio.title}</div>
-                    <div className="flex space-x-3 pt-6">
-                        <a href={`mailto:${bio.email}`} className="text-sm text-gray-500 transition hover:text-gray-600">
-                        Email
-                        </a>
-                    </div>
-                </div>
-                <div
-                    className="prose max-w-none pb-8 pt-8 dark:prose-dark xl:col-span-2"
-                    dangerouslySetInnerHTML={{ __html: bio.contentHtml }}
-                />
+      <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8">
+        {/* Left Sidebar */}
+        <div className="md:col-span-1 space-y-8">
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800 flex flex-col items-center text-center">
+            <img src={bio.image} alt={bio.name} className="h-48 w-48 rounded-full mb-4" />
+            <h3 className="text-2xl font-bold leading-8 tracking-tight">{bio.name}</h3>
+            <p className="text-gray-500 dark:text-gray-400 mt-1">{bio.title}</p>
+            <a href={`mailto:${bio.email}`} className="text-sm text-blue-500 hover:underline mt-4">
+              {bio.email}
+            </a>
+          </div>
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-xl font-bold mb-4">Skills</h2>
+            <div className="flex flex-wrap gap-2">
+              {bio.skills.map((skill, index) => (
+                <span key={index} className="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full dark:bg-gray-700 dark:text-gray-200">
+                  {skill}
+                </span>
+              ))}
             </div>
-        </div>
-
-        {/* Experience Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-          <h2 className="text-2xl font-bold mb-4">Experience</h2>
-          <div className="space-y-4">
-            {bio.experience.map((exp, index) => (
-              <div key={index}>
-                <h3 className="text-lg font-semibold">{exp.role}</h3>
-                <p className="text-gray-700 dark:text-gray-300">{exp.institution}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{exp.duration}</p>
-              </div>
-            ))}
           </div>
         </div>
 
-        {/* Education Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-          <h2 className="text-2xl font-bold mb-4">Education</h2>
-          <div className="space-y-4">
-            {bio.education.map((edu, index) => (
-              <div key={index}>
-                <h3 className="text-lg font-semibold">{edu.degree}</h3>
-                <p className="text-gray-700 dark:text-gray-300">{edu.institution}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{edu.duration}</p>
-              </div>
-            ))}
+        {/* Right Content */}
+        <div className="md:col-span-3 space-y-8">
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">About Me</h2>
+            <div
+              className="prose max-w-none dark:prose-dark"
+              dangerouslySetInnerHTML={{ __html: bio.aboutHtml }}
+            />
           </div>
-        </div>
-
-        {/* Skills Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-          <h2 className="text-2xl font-bold mb-4">Skills</h2>
-          <div className="flex flex-wrap gap-2">
-            {bio.skills.map((skill, index) => (
-              <span key={index} className="bg-gray-200 text-gray-800 text-sm font-medium px-2.5 py-0.5 rounded-full">
-                {skill}
-              </span>
-            ))}
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">Research Interests</h2>
+            <div
+              className="prose max-w-none dark:prose-dark"
+              dangerouslySetInnerHTML={{ __html: bio.researchInterestsHtml }}
+            />
           </div>
-        </div>
-
-        {/* Teaching Section */}
-        <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
-          <h2 className="text-2xl font-bold mb-4">Teaching</h2>
-          <div className="space-y-4">
-            {bio.teaching.map((item, index) => (
-              <div key={index}>
-                <h3 className="text-lg font-semibold">{item.role}</h3>
-                <p className="text-gray-700 dark:text-gray-300">{item.institution}</p>
-                <p className="text-sm text-gray-500 dark:text-gray-400">{item.duration}</p>
-                <ul className="list-disc list-inside mt-2 space-y-1">
-                  {item.courses.map((course, i) => (
-                    <li key={i} className="text-sm">{course}</li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">Current Focus</h2>
+            <div
+              className="prose max-w-none dark:prose-dark"
+              dangerouslySetInnerHTML={{ __html: bio.currentFocusHtml }}
+            />
+          </div>
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">Experience</h2>
+            <div className="space-y-6">
+              {bio.experience.map((exp, index) => (
+                <div key={index} className="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+                  <h3 className="text-lg font-semibold">{exp.role}</h3>
+                  <p className="text-gray-700 dark:text-gray-300">{exp.institution}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{exp.duration}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">Education</h2>
+            <div className="space-y-6">
+              {bio.education.map((edu, index) => (
+                <div key={index} className="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+                  <h3 className="text-lg font-semibold">{edu.degree}</h3>
+                  <p className="text-gray-700 dark:text-gray-300">{edu.institution}</p>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{edu.duration}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="p-6 border rounded-lg shadow-sm bg-white dark:bg-gray-800">
+            <h2 className="text-2xl font-bold mb-4">Teaching</h2>
+            <div className="space-y-6">
+              {bio.teaching.map((item, index) => (
+                <div key={index} className="pl-4 border-l-2 border-gray-200 dark:border-gray-700">
+                  <h3 className="text-lg font-semibold">{item.role} at {item.institution}</h3>
+                  <p className="text-sm text-gray-500 dark:text-gray-400">{item.duration}</p>
+                  <ul className="list-disc list-inside mt-2 space-y-1 text-sm">
+                    {item.courses.map((course, i) => (
+                      <li key={i}>{course}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
+
