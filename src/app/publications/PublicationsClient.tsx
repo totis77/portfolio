@@ -3,27 +3,22 @@
 import { useState, useMemo } from 'react';
 import type { Publication } from '@/lib/publications';
 import Link from 'next/link';
-import InteractiveThumbnail from '@/components/InteractiveThumbnail';
 
 const PublicationCard = ({ pub }: { pub: Publication }) => (
   <div className="p-4 border rounded-lg shadow-sm bg-white dark:bg-gray-800 flex flex-col md:flex-row gap-6">
-    <div className="md:w-1/4 h-32 md:h-auto">
-      {pub.animation ? (
-        <InteractiveThumbnail animationType={pub.animation} />
-      ) : pub.thumbnail ? (
+    {pub.thumbnail && (
+      <div className="md:w-1/4">
         <img
           src={pub.thumbnail}
           alt={`${pub.title} thumbnail`}
-          className="w-full h-full object-cover rounded-md"
+          className="w-full h-auto object-cover rounded-md"
         />
-      ) : (
-        <div className="w-full h-full bg-gray-100 dark:bg-gray-700 rounded-md" />
-      )}
-    </div>
+      </div>
+    )}
     <div className="flex-1">
       <div className="flex justify-between items-start">
         <h2 className="text-xl font-semibold flex-1">{pub.title}</h2>
-        <span className="ml-4 text-xs font-medium bg-gray-100 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2.5 py-1 rounded-full whitespace-nowrap">
+        <span className="ml-4 text-xs font-medium bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-200 px-2.5 py-1 rounded-full whitespace-nowrap">
           {pub.type}
         </span>
       </div>
@@ -33,6 +28,9 @@ const PublicationCard = ({ pub }: { pub: Publication }) => (
         dangerouslySetInnerHTML={{ __html: pub.formatted }} 
       />
 
+      <p className="text-sm text-gray-500 dark:text-gray-400">
+        {pub.journal || pub.booktitle}, {pub.year}
+      </p>
       {pub.tagline && <p className="mt-2 text-gray-700 dark:text-gray-300 italic">&quot;{pub.tagline}&quot;</p>}
       
       <div className="mt-4 flex flex-wrap gap-x-4 gap-y-2">
@@ -181,3 +179,4 @@ export default function PublicationsClient({ allPublications }: { allPublication
     </div>
   );
 }
+
