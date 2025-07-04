@@ -70,7 +70,7 @@ export function getPublications(): Publication[] {
     const media = mediaData[id] || {};
     const year = p.issued?.['date-parts']?.[0]?.[0]?.toString() || '';
     
-    let formattedCitation = `<p>Error formatting citation for ${id}</p>`;
+    let formattedCitation = `<p>Error formatting citation for ${id}. Please check the BibTeX entry for this publication.</p>`;
     try {
       formattedCitation = new Cite(p).format('bibliography', {
         format: 'html',
@@ -79,9 +79,9 @@ export function getPublications(): Publication[] {
       });
     } catch (e) {
       if (e instanceof Error) {
-        console.error(`Failed to format citation for entry: ${id}. Error: ${e.message}`);
+        console.error(`Failed to format citation for entry: ${id}. Error: ${e.message}. BibTeX entry: ${entryStr}`);
       } else {
-        console.error(`Failed to format citation for entry: ${id}. Unknown error: ${e}`);
+        console.error(`Failed to format citation for entry: ${id}. Unknown error: ${e}. BibTeX entry: ${entryStr}`);
       }
     }
 
